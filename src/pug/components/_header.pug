@@ -1,0 +1,28 @@
+header.header
+    .container
+        .header__wrap
+            a.logo(href="#")
+                img(src="../img/logo.svg", alt="logo")
+            nav.nav
+                button.button--minicart
+                    //- .cart-wrap
+                    include ../../img/cart-green.svg
+                input.checkbox(type="checkbox")
+                button.button--burger
+                    span
+                    span
+                    span
+                ul.nav__menu
+                    li.nav__item
+                        a.nav__link(href="#") home
+                    li.nav__item
+                        a.nav__link(href="#") about us
+                    li.nav__item
+                        a.nav__link(href="#") shop
+                    li.nav__item
+                        a.nav__link(href="#") pages
+                    li.nav__item
+                        a.nav__link(href="#") contact us
+            button.button.button--cart Cart 0
+                span.cart-wrap
+                    img.cart(src="../img/cart.svg", alt="cart")

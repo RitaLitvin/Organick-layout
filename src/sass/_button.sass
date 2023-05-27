@@ -1,0 +1,145 @@
+.button
+    border: none
+    font-family: $roboto
+    font-style: normal
+    text-transform: capitalize
+    border-radius: 16px
+    cursor: pointer
+    font-style: normal
+    font-weight: 400
+    transition: 0.3s ease-out
+    &--minicart
+        background-color: transparent
+        border: none
+        width: 35px
+        cursor: pointer
+        z-index: 10000
+        margin-top: 3px
+        @media (min-width: 768px)
+            display: none
+    &--cart
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        flex-direction: row-reverse
+        gap: 10px
+        width: 159px
+        height: 70px
+        font-size: 17px
+        line-height: 29px
+        letter-spacing: 0.36px
+        background-color: $white
+        border: 1px solid #D4D4D4
+        border-radius: 33px
+        padding: 8px 26px 8px 10px
+        word-spacing: 5px
+        @media (max-width: 1024px)
+            grid-area: cart
+        @media (max-width: 767px)
+            display: none
+    &--burger
+        display: flex
+        gap: 7px
+        flex-direction: column
+        border: none
+        background-color: transparent
+        right: 20px
+        z-index: 10000
+        @media (min-width: 768px)
+            display: none
+    &--burger span
+        width: 35px
+        height: 3px
+        border-radius: 5px
+        background-color: $primary-color
+        position: relative
+        transition: 0.2s ease-in-out
+        @media (max-width: 500px)
+            width: 30px
+    &--hero
+        background-color: $yellow
+        color: $primary-color
+        height: 82px
+        width: 219px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 25px 9px 25px 33px
+        gap: 29px
+        font-size: 19px
+        line-height: 32px
+        letter-spacing: 0.36px
+    &--about
+        background-color: $primary-color
+        color: $white
+        height: 82px
+        width: 199px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 25px 9px 25px 33px
+        gap: 29px
+        font-size: 19px
+        line-height: 32px
+        letter-spacing: 0.6px
+        margin-top: 46px
+        white-space: nowrap
+        @media (max-width: 1024px)
+            margin-left: auto
+        @media (max-width: 650px)
+            font-size: 16px
+    &--offer
+        background-color: $yellow
+        color: $primary-color
+        height: 82px
+        width: 267px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 21px 11px 23px 33px
+        gap: 22px
+        font-size: 20px
+        line-height: 32px
+        letter-spacing: 0.36px
+        margin-right: 10px
+        margin-top: -19px
+        @media (max-width: 974px)
+            margin-top: 15px
+        @media (max-width: 650px)
+            font-size: 16px
+            padding: 15px 11px 15px 20px
+            width: auto
+    &--form
+        font-family: $opensans
+        background-color: $primary-color
+        color: $white
+        height: 82px
+        width: 197px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 23px 11px 24px 36px
+        gap: 25px
+        font-size: 18px
+        font-weight: 700
+        line-height: 29px
+        letter-spacing: 0.36px
+        white-space: nowrap
+        margin-right: 10px
+        @media (max-width: 1280px)
+            grid-area: button
+        @media (max-width: 688px)
+            justify-self: center
+            font-size: 16px
+            margin-right: 0
+            height: 70px
+            width: 175px
+            padding: 20px 10px 20px 20px
+    &:hover
+        box-shadow: 4px 4px 8px #0c0c0c49
+    &--color:hover
+        background-color: $yellow
+        color: $primary-color
+        font-weight: 700
+    &--glow:hover
+        box-shadow: 0px 0px 15px 5px $secondary-color

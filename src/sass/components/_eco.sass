@@ -1,0 +1,64 @@
+.eco
+    background-image: url("../img/eco-bg.jpg")
+    background-repeat: no-repeat
+    background-size: 50% 100%
+    background-position: left
+    @media (max-width: 1152px)
+        background-size: cover
+    @media (max-width: 650px)
+        background-image: linear-gradient(rgba(239, 211, 114, 0.7),rgba(136, 185, 144, 0.7))
+.container__eco
+    padding: 38px 0 40px 0
+    display: flex
+.eco__wrap
+    padding: 40px 95px 40px 60px
+    margin-left: auto
+    background-color: $white
+    border-top-left-radius: 30px
+    border-bottom-left-radius: 30px
+    @media (max-width:1439px)
+        width: 50%
+        padding: 40px 90px
+    @media (max-width: 1152px)
+        border-radius: 30px
+        background-color: rgba(255, 255, 255, 0.5)
+        margin: 0 auto
+        backdrop-filter: blur(15px)
+        width: 65%
+        padding: 20px 30px
+.title__eco
+    margin-bottom: 30px
+    font-size: 44px
+    & br
+        @media (max-width: 1439px)
+            display: none
+    @media (max-width: 650px)
+        font-size: 35px
+.eco__description-title
+    font-family: $roboto
+    font-style: normal
+    font-weight: 700
+    font-size: 23px
+    line-height: 32px
+    letter-spacing: 0.36px
+    text-transform: capitalize
+    color: $primary-color
+    @media (max-width: 650px)
+        font-size: 18px
+.eco__description-text
+    font-family: $opensans
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 32px
+    letter-spacing: 0.36px
+    color: $dark-gray
+    margin: 5px 0 10px 0
+    @media (max-width: 650px)
+        font-size: 15px
+        line-height: 24px
+    & br
+        @media (max-width: 1439px)
+            display: none
+
+

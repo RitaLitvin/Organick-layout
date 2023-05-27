@@ -1,0 +1,56 @@
+.cards
+    background-color: $almost-white
+.cards__wrap
+    display: flex
+    justify-content: flex-start
+    gap: 50px
+    padding: 140px 0
+    @media (max-width: 1439px)
+        flex-wrap: wrap
+        justify-content: center
+    @media (max-width: 767px)
+        gap: 15px
+        padding: 50px 0
+.card
+    border-radius: 30px
+    min-width: 665px
+    padding: 104px 0
+    background-repeat: no-repeat
+    transition: 0.3s ease
+    &:first-child
+        background-image: url("../img/natural-bg.png")
+        color: $white
+        @media (max-width: 600px)
+            background-image: linear-gradient(50deg, rgba(249, 104, 147, 0.8) 55%, transparent), url("../img/natural-bg.png")
+        & .cards__subtitle
+            color: $white
+    &:last-child
+        background-image: url("../img/offer-bg.png")
+        @media (max-width: 600px)
+            background-image: linear-gradient(50deg, rgba(254, 198, 111, 0.8) 55%, transparent), url("../img/offer-bg.png")
+        & .cards__text
+            color: $primary-color
+    &:hover
+        box-shadow: 5px 7px 10px #0c0c0c3d
+    @media (max-width: 800px)
+        min-width: 90%
+    @media (max-width: 650px)
+        padding: 50px 0
+        background-position: bottom
+.cards__subtitle, .cards__text
+    margin-left: 55px
+    @media (max-width: 500px)
+        margin-left: 25px
+.cards__text
+    font-family: $roboto
+    font-style: normal
+    font-weight: 400
+    font-size: 40px
+    line-height: 52px
+    letter-spacing: 0.36px
+    color: $white
+    @media (max-width: 600px)
+        font-size: 30px
+        line-height: 40px
+
+

@@ -1,0 +1,114 @@
+.categories
+    background-color: $light-blue
+.container__categories
+    padding: 140px 0
+    max-width: 1440px
+    @media (max-width: 767px)
+        padding: 50px 0
+.categories__block
+    display: flex
+    justify-content: flex-start
+    gap: 29px
+    @media (max-width: 1439px)
+        flex-wrap: wrap
+        flex-direction: column
+        align-content: center
+.categories__item:nth-child(1)
+    background-image: url("../img/juice.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    &::before
+        content: ""
+        display: block
+        opacity: 0
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to top, rgb(218, 139, 5, 0.5), rgb(255, 255, 255, 0.5)), url("../img/juice.jpg")
+        background-size: cover
+        transition: opacity 0.5s ease-in-out
+        z-index: 0
+    &:hover::before
+        opacity: 1
+    & .categories__link
+        padding: 243px 90px
+        @media (max-width: 500px)
+            padding: 150px 60px
+.categories__item:nth-child(2)
+    background-image: url("../img/organic-food.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    &::before
+        content: ""
+        display: block
+        opacity: 0
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to top, rgb(71, 132, 91, 0.5), rgb(255, 255, 255, 0.5)), url("../img/organic-food.jpg")
+        background-size: cover
+        transition: opacity 0.5s ease-in-out
+        z-index: 0
+    &:hover::before
+        opacity: 1
+    & .categories__link
+        padding: 243px 74px
+        @media (max-width: 500px)
+            padding: 150px 60px
+.categories__item:nth-child(3)
+    background-image: url("../img/cookies.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    &::before
+        content: ""
+        display: block
+        opacity: 0
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to top, rgb(105, 73, 58, 0.5), rgb(255, 255, 255, 0.5)), url("../img/cookies.jpg")
+        background-size: cover
+        transition: opacity 0.5s ease-in-out
+        z-index: 0
+    &:hover::before
+        opacity: 1
+    & .categories__link
+        padding: 243px 74px
+        @media (max-width: 500px)
+            padding: 150px 60px
+    & .categories__text
+        font-size: 24px
+        @media (max-width: 500px)
+            font-size: 18px
+.categories__link
+    display: block
+    position: relative
+    z-index: 100
+.categories__text
+    display: block
+    font-family: $roboto
+    font-style: normal
+    font-weight: 700
+    font-size: 25px
+    line-height: 35px
+    letter-spacing: 0.36px
+    color: $primary-color
+    background-color: $white
+    padding: 30px 80px
+    border-radius: 20px
+    white-space: nowrap
+    position: relative
+    z-index: 100
+    @media (max-width: 500px)
+        padding: 10px 9px
+        text-align: center
+        font-size: 18px

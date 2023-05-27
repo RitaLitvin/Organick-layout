@@ -1,0 +1,115 @@
+.products__wrap
+    padding-top: 123px
+    padding-bottom: 138px
+    @media (max-width: 767px)
+        padding: 50px 0
+.products__title
+    margin-top: -4px
+    margin-bottom: 40px
+.products__gallery
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    gap: 19.5px
+    @media (max-width: 1439px)
+        justify-content: center
+    @media (max-width: 657px)
+.products__item
+    border-radius: 30px
+    background-color: $almost-white
+    transition: 0.4s ease
+    @media (max-width: 973px)
+        width: 45%
+    @media (max-width: 425px)
+        width: 65%
+.products__item:hover
+    box-shadow: 3px 3px 8px #0c0c0c49
+.products__card
+    display: grid
+    grid-template-areas: "products-category . ." "img img img" "products-name products-name products-name" "products-price products-price products-price"
+    padding: 30px 30px 35px 30px
+    @media (max-width: 973px)
+        grid-template-areas: "products-category . ." "img img ." "products-name products-name ." "products-price products-price ."
+        padding: 30px 20px 35px 20px
+    @media (max-width: 657px)
+        padding: 20px 10px 25px 10px
+.products__category
+    grid-area: products-category
+    font-family: $opensans
+    font-style: normal
+    font-weight: 700
+    font-size: 15px
+    line-height: 27px
+    letter-spacing: 0.36px
+    color: $white
+    background-color: $primary-color
+    border-radius: 8px
+    padding: 5px 20px
+    @media (max-width: 973px)
+        font-size: 13px
+        line-height: 20px
+.products__img
+    grid-area: img
+    @media (max-width: 973px)
+        width: 100%
+        justify-self: center
+.products__name
+    grid-area: products-name
+    font-family: $roboto
+    font-style: normal
+    font-weight: 400
+    font-size: 22px
+    line-height: 35px
+    letter-spacing: 0.36px
+    color: $primary-color
+    margin-top: 20px
+    border-bottom: 1px solid #B8B8B8
+    padding-bottom: 11px
+    @media (max-width: 973px)
+        font-size: 16px
+        white-space: nowrap
+        margin-top: 0
+    @media (max-width: 600px)
+        padding-bottom: 0
+        letter-spacing: 0
+.products__price
+    grid-area: products-price
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    gap: 15px
+    width: 100%
+    margin-top: 12px
+    @media (max-width: 788px)
+        flex-direction: column
+        gap: 0px
+.products__old-price
+    font-family: $opensans
+    font-style: normal
+    font-weight: 400
+    font-size: 17px
+    line-height: 32px
+    letter-spacing: 0.36px
+    text-decoration-line: line-through
+    color: #B8B8B8
+    @media (max-width: 973px)
+        font-size: 14px
+        white-space: nowrap
+        line-height: 25px
+.products__new-price
+    font-family: $opensans
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 32px
+    letter-spacing: 0.36px
+    color: $primary-color
+    @media (max-width: 973px)
+        font-size: 15px
+        white-space: nowrap
+        line-height: 25px
+.products__rating
+    margin-left: auto
+    @media (max-width: 788px)
+        margin-left: 0
+        margin-top: 3px

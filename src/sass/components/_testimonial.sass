@@ -1,0 +1,139 @@
+.testimonial
+    background-image: url("../img/testimonial-bg.jpg")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    @media (max-width: 1250px)
+        background-image: none
+.container__testimonial
+    padding-top: 128px
+    padding-bottom: 150px
+    @media (max-width: 767px)
+        padding: 50px 0
+.testimonial__subtitle
+    margin-top: 3px
+.testimonial__title
+    margin-top: -2px
+    padding: 0 30px
+.consumer-pic
+    display: block
+    margin: 60px auto 18px
+.stars
+    display: block
+    margin: 0 auto 31px
+.testimonial__text
+    @media (max-width: 1010px)
+        padding: 0 30px
+    & br
+        @media (max-width: 1010px)
+            display: none
+.consumer-name
+    font-family: $roboto
+    font-style: normal
+    font-weight: 700
+    font-size: 26px
+    line-height: 33.8px
+    text-align: center
+    letter-spacing: 0.36px
+    color: $primary-color
+    display: block
+    margin: 24px auto 0
+.user-type
+    font-family: $opensans
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 27px
+    text-align: center
+    letter-spacing: 0.36px
+    color: $dark-gray
+    display: block
+    margin: 0 auto
+    position: relative
+    &::after
+        content: ''
+        background-color: rgba(224, 224, 224, 1)
+        width: 966px
+        height: 2px
+        position: absolute
+        left: calc(50% - 483px)
+        top: 122px
+        @media (max-width: 1152px)
+            width: 350px
+            left: calc(50% - 175px)
+        @media (max-width: 767px)
+            display: none
+.testimonial__circles
+    display: flex
+    gap: 26px
+    justify-content: space-between
+    padding: 0 151px 0 151px
+    margin-top: 196px
+    @media (max-width: 1439px)
+        justify-content: center
+    @media (max-width: 1024px)
+        gap: 15px
+    @media (max-width: 767px)
+        display: none
+.circle
+    @media (max-width: 1152px)
+        border-radius:15px
+    &:first-child
+        @media (max-width: 1152px)
+            background: linear-gradient(to bottom right, rgba(136, 185, 144, 1), 20%, rgba(174, 194, 133, 0.6))
+    &:nth-child(2)
+        @media (max-width: 1152px)
+            background: linear-gradient(to bottom right, rgba(174, 194, 133, 1), 20%, rgba(196, 200, 127, 0.6))
+    &:nth-child(3)
+        @media (max-width: 1152px)
+            background: linear-gradient(to bottom right, rgba(196, 200, 127, 1), 20%, rgba(214, 205, 122, 0.6))
+    &:last-child
+        @media (max-width: 1152px)
+            background: linear-gradient(to bottom right, rgba(214, 205, 122, 1), 20%, rgba(239, 211, 114, 0.6))
+.green-frame
+    background-color: rgba(241, 241, 241, 1)
+    border: 6px solid $secondary-color
+    border-radius: 50%
+    width: 238px
+    height: 238px
+    @media (max-width: 1152px)
+        width: 165px
+        height: 121px
+        border: none
+        background-color: transparent
+        padding: 50px 0
+.white-frame
+    background-color: transparent
+    border-radius: 50%
+    border: 5px solid $white
+    width: 229px
+    height: 229px
+    @media (max-width: 1152px)
+        width: auto
+        height: auto
+        border: none
+.first-line
+    font-family: $roboto
+    font-style: normal
+    font-weight: 700
+    font-size: 42px
+    line-height: 55px
+    letter-spacing: 0.36px
+    color: $primary-color
+    display: block
+    text-align: center
+    margin-top: 70px
+    @media (max-width: 1152px)
+        margin-top: 0
+.second-line
+    font-family: $opensans
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 32px
+    letter-spacing: 0.36px
+    color: $primary-color
+    display: block
+    text-align: center
+    margin-top: 2px
+    @media (max-width: 1152px)
+        padding: 0 10px

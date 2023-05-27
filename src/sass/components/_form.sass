@@ -1,0 +1,76 @@
+.form
+    padding-top: 30px
+    padding-left: 30px
+    padding-right: 30px
+.form__wrap
+    background-image: url("../img/form-bg.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 30px
+    @media (max-width: 1280px)
+        background-position: center
+.container__form
+    padding: 0
+.form__row
+    padding: 100px 70px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    @media (max-width: 1280px)
+        display: grid
+        grid-template-areas: 'text text' 'form button'
+        justify-content: center
+        padding: 80px 0
+        row-gap: 20px
+    @media (max-width: 688px)
+        grid-template-areas: 'text text' 'form form' 'button button'
+.form__title
+    font-family: $roboto
+    font-style: normal
+    font-weight: 700
+    font-size: 50px
+    line-height: 60px
+    letter-spacing: 0.36px
+    text-transform: capitalize
+    color: $white
+    margin-right: auto
+    @media (max-width: 1280px)
+        grid-area: text
+        text-align: center
+    @media (max-width: 650px)
+        font-size: 35px
+        line-height: 45px
+    & br
+        @media (max-width: 1280px)
+            display: none
+.form__email
+    background: $white
+    border: 1px solid rgba(204, 204, 204, 1)
+    border-radius: 16px
+    width: 290px
+    height: 82px
+    padding: 0 30px
+    margin-right: 10px
+    font-family: $opensans
+    font-size: 18px
+    outline: 0
+    @media (max-width: 1280px)
+        grid-area: form
+    @media (max-width: 688px)
+        justify-self: center
+        margin-right: 0
+    @media (max-width: 482px)
+        width: 150px
+        height: 50px
+        padding: 0 10px
+    &::placeholder
+        font-family: $opensans
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 29px
+        letter-spacing: 0.36px
+        color: $dark-gray
+        @media (max-width: 482px)
+            font-size: 12px
+
